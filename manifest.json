@@ -1,0 +1,29 @@
+{
+    "name": "Page Sentiment Prediction",
+    "description": "Calculates page sentiment based on the text information it contains",
+    "version": "1.0",
+    "author": "Rhaam Rozenberg and Robert Fonod",
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/icon_16.png",
+            "32": "icons/icon_32.png",
+            "48": "icons/icon_48.png",
+            "128": "icons/icon_128.png"
+        },
+        "default_popup": "html/popup.html",
+        "default_title": "Page Sentiment Prediction"
+    },
+    "icons": {
+        "16": "icons/icon_16.png",
+        "32": "icons/icon_32.png",
+        "48": "icons/icon_48.png",
+        "128": "icons/icon_128.png"
+    },
+    "permissions": ["activeTab"],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+      },
+    "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js 'unsafe-eval'; object-src 'self'",
+    "manifest_version": 2
+}

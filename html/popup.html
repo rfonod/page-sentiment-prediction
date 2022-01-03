@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name='author' content='Robert Fonod and Rhaam Rozenberg'>
+        <title>Sentiment Prediction</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- Load external js libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+        <!-- Load back-end script -->
+        <script type="text/javascript" src='../js/back-end.js' charset='utf-8'></script>
+        <!-- Load front-end script -->
+        <script type='text/javascript' src='../js/front-end.js' charset='utf-8'></script>
+    </head>
+    <body>
+        <img id='iconID' src='../icons/analyzing.gif' width="60">
+        <h1 id='textID'><strong>Analyzing page sentiment...</strong></h1>
+        <button id="clickItPos" type="button" class="button">Show Positive Sentences</button>
+        <br>
+        <h2 id='pos1ID'></h2>
+        <h2 id='pos2ID'></h2>
+        <h2 id='pos3ID'></h2>
+        <button id="clickItNeg" type="button" class="button">Show Negative Negative</button>
+        <br>
+        <h2 id='neg1ID'></h2>
+        <h2 id='neg2ID'></h2>
+        <h2 id='neg3ID'></h2>
+    </body>
+</html>
